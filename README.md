@@ -14,5 +14,6 @@ and the "foo" location can be viewed on `localhost/foo` and gives files that are
 **Every location has to end with a '/' !!!**
 
 ## Screenshots
-![](Screenshots/index.png)
 ![](Screenshots/locations.png)
+![](Screenshots/index.png)
+
