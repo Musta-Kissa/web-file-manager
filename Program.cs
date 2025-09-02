@@ -262,6 +262,9 @@ class Program {
             try {
                 dirs = Directory.GetDirectories(path);
                 files = Directory.GetFiles(path);
+
+                Array.Sort(dirs, StringComparer.OrdinalIgnoreCase);
+                Array.Sort(files, StringComparer.OrdinalIgnoreCase);
             }
             catch (Exception ex) {
                 response.StatusCode = 500;
@@ -470,6 +473,7 @@ class Program {
             padding-left: 2rem;
             padding-top: 1rem;
             list-style-type: none;
+            padding-bottom: 10rem;
         }
         .files li {
             margin-bottom: 3px; 
