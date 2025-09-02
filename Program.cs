@@ -48,7 +48,7 @@ class Program {
 
         foreach(var entry in LOCATIONS ) {
             if (!Directory.Exists(entry.Value)) {
-                Console.WriteLine("Base Directory not found.");
+                Console.WriteLine("Location Directory not found.");
                 return -1;
             }
         }
