@@ -1,0 +1,3 @@
+ root       = /
+ testing    = /home/user/testing/
+ foo        = /foo/bazz/barr/
