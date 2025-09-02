@@ -421,20 +421,28 @@ class Program {
         return sessionId;
     }
     static void DeletePath(string fs_path) {
-        if( Directory.Exists(fs_path) ) {
-            Directory.Delete(fs_path, recursive: true);
-        } else 
-        if( File.Exists(fs_path) ) {
-            File.Delete(fs_path);
-        } 
+        try {
+            if( Directory.Exists(fs_path) ) {
+                Directory.Delete(fs_path, recursive: true);
+            } else 
+            if( File.Exists(fs_path) ) {
+                File.Delete(fs_path);
+            } 
+        } catch (Exception ex) {
+            Console.WriteLine($"Got an Exeption when Deleting: {ex.Message}");
+        }
     }
 
     static void CopyPath(string source_path, string destination_path) {
-        if( Directory.Exists(source_path) ) {
-            CopyDirectory(source_path,destination_path);
-        } else 
-        if( File.Exists(source_path) ) {
-            File.Copy(source_path, destination_path, overwrite: true);
+        try {
+            if( Directory.Exists(source_path) ) {
+                CopyDirectory(source_path,destination_path);
+            } else 
+            if( File.Exists(source_path) ) {
+                File.Copy(source_path, destination_path, overwrite: true);
+            }
+        } catch (Exception ex) {
+            Console.WriteLine($"Got an Exeption when Copying: {ex.Message}");
         }
     }
 
