@@ -22,6 +22,9 @@ To Delete click the checkboxes next to the files, click the `Select`, then move 
 
 To create a directory write the directory name in the box and click `Enter` or `Submit`
 
+## Trouble Shootin
+If there are problems creating / deleting files try running with `sudo`
+
 ## Screenshots
 ![](Screenshots/locations.png)
 ![](Screenshots/index.png)
