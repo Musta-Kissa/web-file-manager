@@ -308,11 +308,11 @@ class Program {
 
                 <form method=""post"" action=""/delete/"" >
                     <input type=""hidden"" name=""currentPath"" value='/{absolute_link_path}'>
-                    <input type=""submit"" value=""Delete Selected Files "">
+                    <input type=""submit"" value=""Delete"">
                 </form>
                 
                 <form method=""post"" action= ""/mkdir/"" >
-                    <label for= ""dir_name"" >Make new directory: </label>
+                    <label for= ""dir_name"" >Create directory: </label>
                     <input type= ""text"" name="" dir_name"" >
                     <input type= ""hidden"" name=""currentPath"" value='/{absolute_link_path}'>
                     <button type= ""submit"" >Submit</button>
