@@ -25,6 +25,9 @@ To create a directory write the directory name in the box and click `Enter` or `
 ## Trouble Shootin
 If there are problems creating / deleting files try running with `sudo`
 
+## Deployment
+To deploy as a standalone program use `dotnet publish -c Release -r linux-x64 --self-contained`
+
 ## Screenshots
 ![](Screenshots/locations.png)
 ![](Screenshots/index.png)
