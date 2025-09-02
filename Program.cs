@@ -6,17 +6,7 @@ using System.Collections;
 
 class Program {
     static Dictionary<string, HashSet<string>> SESSIONS = new();
-    //static Dictionary<string, Dictionary<string, string>> SESSIONS = new();
     static Dictionary<string, string> LOCATIONS = new();
-    /*
-    static Dictionary<string, string> LOCATIONS = new Dictionary<string, string>
-    {
-        { "mustahattu", "/home/mustahattu/"},
-        { "Sync"      , "/home/mustahattu/Sync/"},
-        { "Testing"   , "/home/mustahattu/Sync/Code/C-sharp/file-manager/"},
-        { "root", "/" },
-    };
-    */
 
     static void read_locations() {
         string path = "locations.txt";
@@ -114,7 +104,6 @@ class Program {
                 Console.WriteLine("Final Path : {0}" , path );
             serve_path(session_id,response,path,  absolute_link_path );
         }
-        return 0; 
     }
     static void handle_locations_path(HttpListenerContext context) {
         string[] dir_names = LOCATIONS.Keys.ToArray();
